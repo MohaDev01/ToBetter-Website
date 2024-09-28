@@ -1,0 +1,122 @@
+/*General*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Roboto, Viga;
+  animation: zooms 1.5s ease-in-out forwards;
+}
+@keyframes zooms {
+  0% {
+    margin: 1rem 0% 1rem 0%;
+  }
+}
+
+/*Loader*/
+#loader .top {
+  background-color: #472372;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 998;
+  animation: slideUp ease 1.5s forwards;
+  overflow: hidden;
+}
+@keyframes slideUp {
+  from {transform: translateY(0%);}
+  to {transform: translateY(-100%);}
+}
+#loader .bottom {
+  background-color: #472372;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 998;
+  animation: slideDown ease 1.5s forwards;
+  overflow: hidden;
+}
+@keyframes slideDown {
+  from {transform: translateY(0%);}
+  to {transform: translateY(100%);}
+}
+
+/* NAV */
+
+#nav-bar {
+  min-height: 4.5rem;
+  padding: 0rem 1rem;
+}
+
+/*Main*/
+
+/*Skills Section*/
+#blog {
+  margin-top: 12rem;
+}
+#blog2 {
+  margin-top: 12rem;
+}
+@media screen and (max-width: 768px) {
+  #blog {
+    margin-top: 0;
+  }
+  #blog2 {
+    margin-top: 0;
+  }
+}
+/*Task Management*/
+#task-management .card-header {
+  background-color: #4A90E2;
+}
+/*Note-taking*/
+#note-taking .card-header {
+  background-color: #50C878;
+}
+/*Project Management*/
+#project-management .card-header {
+  background-color: #FF6B6B;
+}
+
+/*Cards*/
+
+.card .card-header {
+  background-color: #472372;
+  color: white;
+}
+
+/*About*/
+#about-section {
+  margin-top: 10rem;
+}
+
+#about-section ol {
+  list-style-type: none;
+}
+#back-to-top {
+  display: inline-flex;
+  text-decoration: none;
+  border: .1rem solid;
+  border-radius: 1rem;
+  padding: .1rem .4rem .1rem .4rem;
+  animation: floats 2s ease infinite alternate;
+}
+@keyframes floats {
+  100% {
+    transform: translate(0, -50%);
+  }
+}
+
+/*Footer*/
+
+footer {
+  background-color: #472372;
+}
+footer img {
+  width: 50%;
+}
